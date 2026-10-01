@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Dashboard Pesantren An-Naqoyah
+    </title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="top-header">
+
+
+    <!-- LOGO + NAMA -->
+
+    <div class="brand">
+
+        <img
+            src="images/logo.jpg"
+            alt="Logo Pesantren An-Naqoyah"
+        >
+
+        <div class="brand-text">
+
+            <h1>
+                PESANTREN AN-NAQOYAH
+            </h1>
+
+            <p>
+                SISTEM INFORMASI AKADEMIK & LOGISTIK
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOMBOL STAFF -->
+
+    <button
+        class="staff-button"
+        onclick="loginStaff()"
+    >
+
+        🔐
+        Masuk Staff
+
+    </button>
+
+
+</header>
+
+
+
+<!-- ==================================================
+     KONTEN UTAMA
+================================================== -->
+
+<main class="container">
+
+
+    <!-- ==================================================
+         MODE PRATINJAU
+    ================================================== -->
+
+    <div class="preview-box">
+
+
+        <div class="preview-icon">
+
+            ℹ️
+
+        </div>
+
+
+        <div class="preview-text">
+
+            <h3>
+                Mode Pratinjau Publik
+            </h3>
+
+            <p>
+                Anda saat ini berada pada tampilan umum.
+                Silakan <b>Masuk Staff</b> untuk mengelola
+                data dan mengunduh laporan secara penuh.
+            </p>
+
+        </div>
+
+
+        <button
+            class="login-now"
+            onclick="loginStaff()"
+        >
+
+            Login Sekarang
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         KARTU INFORMASI
+    ================================================== -->
+
+    <div class="dashboard-cards">
+
+
+        <!-- SANTRI -->
+
+        <div class="dashboard-card">
+
+
+            <div class="card-icon purple">
+
+                👨‍🎓
+
+            </div>
+
+
+            <div class="card-content">
+
+                <span>
+                    TOTAL SANTRI
+                    <br>
+                    AKTIF
+                </span>
+
+
+                <div class="number">
+
+                    428
+
+                    <small class="increase">
+                        ↑ +12
+                    </small>
+
+                </div>
+
+
+                <p>
+                    Santri aktif saat ini
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- STOK -->
+
+        <div class="dashboard-card">
+
+
+            <div class="card-icon green">
+
+                📦
+
+            </div>
+
+
+            <div class="card-content">
+
+                <span>
+                    STOK LOGISTIK
+                    <br>
+                    AMAN
+                </span>
+
+
+                <div class="number">
+
+                    18
+
+                    <small>
+                        / 20 Kategori
+                    </small>
+
+                </div>
+
+
+                <p>
+                    Kategori stok aman
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- DAPUR -->
+
+        <div class="dashboard-card">
+
+
+            <div class="card-icon orange">
+
+                🍴
+
+            </div>
+
+
+            <div class="card-content">
+
+                <span>
+                    KEBUTUHAN
+                    <br>
+                    DAPUR
+                </span>
+
+
+                <div class="number">
+
+                    3
+
+                    <small>
+                        Meal/Day
+                    </small>
+
+                </div>
+
+
+                <p>
+                    Jadwal makan per hari
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- QR -->
+
+        <div class="dashboard-card">
+
+
+            <div class="card-icon pink">
+
+                ▦
+
+            </div>
+
+
+            <div class="card-content">
+
+                <span>
+                    PRESENSI QR
+                    <br>
+                    WALI
+                </span>
+
+
+                <div class="number">
+
+                    Terintegrasi
+
+                </div>
+
+
+                <p>
+                    Sistem QR wali santri
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ==================================================
+         INFORMASI BAWAH
+    ================================================== -->
+
+    <div class="bottom-section">
+
+
+        <div class="information-box">
+
+            <h2>
+                📊 Informasi Sistem
+            </h2>
+
+            <p>
+                Dashboard Pesantren An-Naqoyah
+                menyediakan informasi akademik dan
+                logistik secara terintegrasi.
+            </p>
+
+        </div>
+
+
+        <div class="information-box">
+
+            <h2>
+                🍚 Logistik Dapur
+            </h2>
+
+            <p>
+                Pantau stok makanan, barang masuk,
+                barang keluar, dan kebutuhan dapur
+                bulanan.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script>
+
+
+function loginStaff() {
+
+    window.location.href = "index.html";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
